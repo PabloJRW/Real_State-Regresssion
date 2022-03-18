@@ -9,7 +9,7 @@ def distPlotter(df):
     columnas_numeric = df.select_dtypes(include=['float64', 'int']).columns
     n_cols = df.shape[1]
 
-    fig, axes = plt.subplots(nrows=3, ncols=3, figsize=(15, 6))
+    fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(15, 6))
     axes = axes.flat
 
 
@@ -29,7 +29,8 @@ def distPlotter(df):
         axes[i].tick_params(labelsize = 9)
         axes[i].set_xlabel("")
     
-    
+   
     fig.tight_layout()
     plt.subplots_adjust(top = 0.9)
-    fig.suptitle('Distribución variables numéricas', fontsize = 15, fontweight = "bold");
+    fig.suptitle('Distribución variables numéricas', fontsize = 15, fontweight = "bold")
+    
