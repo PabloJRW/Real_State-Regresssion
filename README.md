@@ -1,3 +1,3 @@
-# Regresión de precio de viviendas
+# Predicción de precios de viviendas
 
-## Mediante Random Forest (Bosque Aleatorio)
+## Contexto
